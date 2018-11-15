@@ -1,0 +1,98 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*
+    STRUCTURE & TYPOGRAPHY
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Add a radial gradient background */
+}
+
+#mapid {
+    margin-top: 88px;
+    max-width: 100%;
+    height: 300px;
+}
+
+header {
+    background-color: #212121;
+    z-index: 10; /* So the header will go over the map */
+    /* Make the header always stick to the top of the screen */
+    /* Don't let it cover up the map -- adjust the map */
+}
+
+article {
+    padding-bottom: 2.0em;
+}
+
+section {
+    padding: 1.0em;
+    margin: 0 auto;
+    /* Don't let the text get too wide */
+}
+
+h1, h2, h3, p, li {
+    /* Add Google Font 'Raleway'*/
+    line-height: 1.3em;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0.8em 0;
+}
+
+h2 span {
+    font-weight: normal;
+}
+
+/*
+    MENU
+*/
+
+/* Menu icon */
+.menu-icon {
+    z-index: 100; /* in order to be seen over the map */
+    /* position absolutely to the top left corner */
+}
+
+/* Side Nav CSS */
+.sidenav {
+    z-index: 1000; /* in order to be seen over the map */
+}
+
+
+
+/* MEDIA QUERIES */
+/* Adjust the map to fill a reasonable portion of the screen */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* body { background-color: orange; } */
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* body { background-color: green; } */
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* body { background-color: blue; } */
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* body { background-color: purple; } */
+}
