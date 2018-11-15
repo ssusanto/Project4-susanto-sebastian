@@ -55,6 +55,9 @@ h2 span {
     font-weight: normal;
 }
 
+/* MAP */
+#mapid { height: 180px; }
+
 /*
     MENU
 */
