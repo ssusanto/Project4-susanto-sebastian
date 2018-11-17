@@ -14,13 +14,14 @@ body {
     margin: 0;
     padding: 0;
     /* Add a radial gradient background */
+    background: radial-gradient(#E0E0E0, #BDBDBD);
 }
 
-#mapid {
+/* #mapid {
     margin-top: 88px;
     max-width: 100%;
     height: 300px;
-}
+} */
 
 header {
     background-color: #212121;
@@ -31,17 +32,23 @@ header {
 
 article {
     padding-bottom: 2.0em;
+    margin: 0 auto;
+    width: 600px;
+    max-width: 100%;
 }
 
 section {
     padding: 1.0em;
     margin: 0 auto;
     /* Don't let the text get too wide */
+    width: 600px;
+    max-width: 100%;
 }
 
 h1, h2, h3, p, li {
     /* Add Google Font 'Raleway'*/
     line-height: 1.3em;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1 {
@@ -55,32 +62,31 @@ h2 span {
     font-weight: normal;
 }
 
-i {
-    color: white;
-}
 
 /* MAP */
-#mapid { height: 180px; }
+#mapid { 
+    height: 300px;
+    width: 100%;
+    z-index: 0;
+}
 
 /*
     MENU
 */
 
-/* The side navigation menu */
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-/* The navigation menu links */
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -90,12 +96,10 @@ i {
     transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -104,12 +108,18 @@ i {
     margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
+.menu {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+    color: white;
 }
 
+.menu-text {
+	text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
 
 /* Menu icon */
 .menu-icon {
@@ -129,22 +139,37 @@ i {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     /* body { background-color: orange; } */
-
+    #mapid { 
+        height: 350px;
+        width: 100%;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     /* body { background-color: green; } */
+    #mapid { 
+        height: 400px;
+        width: 100%;
+    }
 
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     /* body { background-color: blue; } */
+    #mapid { 
+        height: 450px;
+        width: 100%;
+    }
 
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     /* body { background-color: purple; } */
+    #mapid { 
+        height: 500px;
+        width: 100%;
+    }
 }

@@ -28,10 +28,12 @@
 	<link rel="stylesheet" href="css/normalize.css">
 
 	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
 
 
 	<!-- Font Awesome Icons -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
 
 
 	<!--  Leaflet CSS -->
@@ -52,10 +54,6 @@
 
 	<header>
 		<h1>My Map App</h1>
-		<div id="main">
-			<i class="fas fa-bars fa-3x" onclick="openNav()"></i>
-		</div>
-
 
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -64,15 +62,23 @@
 			<a href="#">Clients</a>
 			<a href="#">Contact</a>
 		</div>
+
+		<span class="menu">
+			<i class="fas fa-bars fa-3x" onclick="openNav()"></i>
+			<br>
+			<span class="menu-text"> menu </span>
+		</span>
+
 	</header>
 
 	<!-- Map -->
 	<div id="mapid"></div>
-	
+
 	<article>
+		<h2>School of Informatics, Computing and Engineering<br>
+			<span>Indiana University</span></h2>
 		<section>
-			<h2>School of Informatics, Computing and Engineering<br>
-				<span>Indiana University</span></h2>
+
 			<p>The School of Informatics and Computing includes the School of Informatics, Computing, and Engineering,
 				Bloomington and the School of Informatics, IUPUI. The mission of the School is to excel and lead in education,
 				research, and outreach spanning and integrating the full breadth of computing and information technology, including
